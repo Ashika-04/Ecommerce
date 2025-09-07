@@ -1,0 +1,244 @@
+.pastry-admin-screen {
+  background-color: #fffaf5;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.pastry-container {
+  max-width: 900px;
+}
+
+.pastry-admin-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(145deg, #fff9f0, #f8e0c7);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(123, 63, 0, 0.1);
+}
+
+.pastry-admin-header h1 {
+  color: #7b3f00;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.admin-subtitle {
+  color: #e76e50;
+  font-style: italic;
+  margin: 0;
+}
+
+.pastry-form-card {
+  border-radius: 15px;
+  border: 1px solid #f8e0c7;
+  box-shadow: 0 6px 15px rgba(123, 63, 0, 0.1);
+  overflow: hidden;
+}
+
+.pastry-form {
+  padding: 10px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-row .form-group {
+  flex: 1;
+  min-width: 250px;
+}
+
+.pastry-form .form-label {
+  color: #7b3f00;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.pastry-form .form-label i {
+  margin-right: 10px;
+  color: #e76e50;
+  width: 20px;
+}
+
+.pastry-input, .pastry-textarea, .pastry-upload {
+  border: 2px solid #f8c19a;
+  border-radius: 10px;
+  padding: 12px 15px;
+  background-color: #fff9f0;
+  transition: all 0.3s ease;
+}
+
+.pastry-input:focus, .pastry-textarea:focus, .pastry-upload:focus {
+  border-color: #e76e50;
+  box-shadow: 0 0 0 0.2rem rgba(231, 110, 80, 0.25);
+  background-color: #fff;
+}
+
+.pastry-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.upload-label {
+  display: block;
+  padding: 10px 15px;
+  background-color: #f8e0c7;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #7b3f00;
+  font-weight: 600;
+}
+
+.images-list {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.image-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff9f0;
+  border: 1px solid #f8e0c7;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.image-url {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #5a3921;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+.delete-image-btn {
+  color: #e76e50;
+  border: none;
+  background: transparent;
+  padding: 5px;
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.delete-image-btn:hover {
+  color: #ff3b1f;
+  background: transparent;
+  transform: scale(1.1);
+}
+
+.no-images-msg {
+  text-align: center;
+  padding: 15px;
+  color: #a86c42;
+  font-style: italic;
+  background-color: #fff9f0;
+  border-radius: 10px;
+  border: 1px dashed #f8c19a;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.update-btn {
+  background: linear-gradient(to right, #e76e50, #7b3f00);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(123, 63, 0, 0.3);
+  min-width: 200px;
+}
+
+.update-btn:hover:not(:disabled) {
+  background: linear-gradient(to right, #7b3f00, #e76e50);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(123, 63, 0, 0.4);
+}
+
+.update-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.cancel-btn {
+  border: 2px solid #7b3f00;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #7b3f00;
+  background: transparent;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.cancel-btn:hover {
+  background-color: #7b3f00;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .update-btn, .cancel-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .image-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .delete-image-btn {
+    align-self: flex-end;
+  }
+}
+
+/* Loading box customization */
+.loading-box {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* MessageBox customization */
+.alert {
+  border-radius: 10px;
+  border: none;
+}
+
+.alert-danger {
+  background-color: #ffe0e0;
+  color: #c33;
+  border-left: 4px solid #c33;
+}

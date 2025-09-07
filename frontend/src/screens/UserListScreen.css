@@ -1,0 +1,269 @@
+.pastry-user-list-screen {
+  background-color: #fffaf5;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.pastry-admin-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(145deg, #fff9f0, #f8e0c7);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(123, 63, 0, 0.1);
+}
+
+.pastry-admin-header h1 {
+  color: #7b3f00;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.admin-subtitle {
+  color: #e76e50;
+  font-style: italic;
+  margin: 0;
+}
+
+.pastry-users-card {
+  border-radius: 15px;
+  border: 1px solid #f8e0c7;
+  box-shadow: 0 6px 15px rgba(123, 63, 0, 0.1);
+  overflow: hidden;
+}
+
+.pastry-users-table {
+  margin: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.pastry-users-table thead th {
+  background: linear-gradient(145deg, #e76e50, #7b3f00);
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+  text-align: left;
+  border: none;
+}
+
+.pastry-users-table thead th i {
+  margin-right: 8px;
+}
+
+.pastry-users-table tbody td {
+  padding: 15px;
+  border: 1px solid #f8e0c7;
+  vertical-align: middle;
+}
+
+.user-row {
+  transition: all 0.3s ease;
+  background-color: #fff9f0;
+}
+
+.user-row:hover {
+  background-color: #f8e0c7;
+  transform: translateY(-2px);
+}
+
+.user-id {
+  color: #a86c42;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.user-name {
+  color: #7b3f00;
+  font-weight: 600;
+}
+
+.user-email {
+  color: #5a3921;
+}
+
+.user-role {
+  text-align: center;
+}
+
+.admin-badge, .user-badge {
+  border-radius: 15px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.admin-badge {
+  background: linear-gradient(145deg, #e76e50, #7b3f00) !important;
+}
+
+.user-badge {
+  background: linear-gradient(145deg, #a86c42, #7b3f00) !important;
+}
+
+.admin-badge i, .user-badge i {
+  margin-right: 5px;
+}
+
+.user-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.edit-btn, .delete-btn {
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.edit-btn {
+  background: linear-gradient(to right, #4caf50, #2e7d32);
+  color: white;
+}
+
+.edit-btn:hover {
+  background: linear-gradient(to right, #2e7d32, #4caf50);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(46, 125, 50, 0.3);
+  color: white;
+}
+
+.delete-btn {
+  background: linear-gradient(to right, #f44336, #c62828);
+  color: white;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(to right, #c62828, #f44336);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(198, 40, 40, 0.3);
+  color: white;
+}
+
+.no-users-message {
+  text-align: center;
+  padding: 40px;
+  color: #a86c42;
+}
+
+.no-users-message i {
+  font-size: 3rem;
+  color: #e76e50;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.no-users-message h3 {
+  color: #7b3f00;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+.no-users-message p {
+  font-style: italic;
+}
+
+/* Loading box customization */
+.loading-box {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+/* MessageBox customization */
+.alert {
+  border-radius: 10px;
+  border: none;
+}
+
+.alert-danger {
+  background-color: #ffe0e0;
+  color: #c33;
+  border-left: 4px solid #c33;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .pastry-user-list-screen {
+    padding: 10px;
+  }
+  
+  .user-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .edit-btn, .delete-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .pastry-users-table {
+    font-size: 0.9rem;
+  }
+  
+  .pastry-users-table thead th {
+    padding: 10px;
+  }
+  
+  .pastry-users-table tbody td {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  .pastry-users-table {
+    min-width: 600px;
+  }
+  
+  .pastry-admin-header {
+    padding: 15px;
+  }
+  
+  .pastry-admin-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .admin-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Animation for new rows */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user-row {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.user-row:nth-child(even) {
+  background-color: #fffaf5;
+}
+
+.user-row:hover {
+  background-color: #f8e0c7;
+}

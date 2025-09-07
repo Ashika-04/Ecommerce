@@ -1,0 +1,160 @@
+/* ProfileScreen.css - Styling for Cake & Pastry Shop Profile Page */
+
+/* Main container styling */
+.profile-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff9f5;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+/* Profile header section */
+.profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px dashed #f8c8c6;
+}
+
+.profile-title {
+  color: #7b3f00;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.profile-icon {
+  font-size: 3rem;
+  color: #e67a73;
+}
+
+/* Profile content area */
+.profile-content {
+  position: relative;
+}
+
+/* Form styling */
+.profile-form {
+  padding: 0 1rem;
+}
+
+.form-group-custom {
+  margin-bottom: 1.8rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #7b3f00;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  border: 2px solid #f1d6d4;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #5a3921;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.form-input:focus {
+  border-color: #e67a73;
+  box-shadow: 0 0 0 0.25rem rgba(230, 122, 115, 0.25);
+  outline: none;
+}
+
+.form-text {
+  color: #a87c65;
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+}
+
+/* Form actions */
+.form-actions {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.profile-update-btn {
+  background: linear-gradient(to right, #e67a73, #d85a67);
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(230, 122, 115, 0.3);
+}
+
+.profile-update-btn:hover:not(:disabled) {
+  background: linear-gradient(to right, #d85a67, #e67a73);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(230, 122, 115, 0.4);
+}
+
+.profile-update-btn:active {
+  transform: translateY(0);
+}
+
+.profile-update-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Loading overlay */
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 249, 245, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  z-index: 10;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .profile-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .profile-title {
+    font-size: 1.8rem;
+  }
+  
+  .profile-form {
+    padding: 0;
+  }
+}
+
+/* Toast notification customization for the theme */
+.Toastify__toast--success {
+  background: linear-gradient(to right, #e67a73, #d85a67) !important;
+  border-radius: 10px !important;
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(to right, #ff6b6b, #ee5a52) !important;
+  border-radius: 10px !important;
+}
+
+/* Font Awesome icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');

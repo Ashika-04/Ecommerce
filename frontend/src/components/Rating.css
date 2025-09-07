@@ -1,0 +1,44 @@
+/* Rating.css - Styling for Rating Component */
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.rating span {
+  margin-right: 0.15rem;
+}
+
+.rating i {
+  color: #ffc107;
+  font-size: 1.1rem;
+}
+
+.rating span:last-child {
+  margin-left: 0.5rem;
+  color: #a87c65;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .rating i {
+    font-size: 1rem;
+  }
+  
+  .rating span:last-child {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .rating i {
+    font-size: 0.9rem;
+  }
+  
+  .rating span:last-child {
+    font-size: 0.85rem;
+  }
+}

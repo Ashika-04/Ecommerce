@@ -1,0 +1,409 @@
+/* Main product screen container */
+.pastry-product-screen {
+  padding: 20px;
+  max-width: 1600px; /* Increased from 1400px */
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Product image container styles */
+.product-image-container {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+  width: 100%;
+  max-width: 1400px; /* Increased from 1200px */
+  min-height: 400px; /* Increased from 50px */
+  margin: 0 auto;
+}
+
+/* Large product image styles */
+.pastry-img-large {
+  width: 100%;
+  /* Increased from 600px */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for large product image */
+.pastry-img-large:hover {
+  transform: scale(1.02);
+}
+
+/* Product info section styles */
+.pastry-product-info {
+  background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 100%);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Product header styles */
+.pastry-product-header {
+}
+
+.pastry-product-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.price-item {
+  background: linear-gradient(135deg, #fff0f0 0%, #ffe6e6 100%) !important;
+  font-size: 1.3rem !important;
+  font-weight: 600;
+  color: #d35400 !important;
+  padding: 15px 20px !important;
+}
+
+.price-item i {
+  margin-right: 10px;
+  color: #e74c3c;
+}
+
+.price-item span {
+  font-weight: 700;
+  color: #c0392b;
+}
+
+
+.thumbnail-section {
+  padding: 15px 0;
+}
+
+.thumbnail-section h3 {
+  color: #8b4513;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.thumbnail-card {
+  border: none !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thumbnail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.thumbnail-btn {
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.thumbnail-btn.active {
+  border: 3px solid #e74c3c !important;
+  transform: scale(1.05);
+}
+
+.thumbnail-btn:hover {
+  transform: scale(1.05);
+}
+
+.thumbnail-btn img {
+  height: 100px;
+  object-fit: cover;
+}
+
+
+.description-item {
+  background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 100%) !important;
+  padding: 20px !important;
+}
+
+.description-item h3 {
+  color: #8b4513;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.description-item p {
+  color: #5d4037;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+
+.pastry-order-card {
+  background: linear-gradient(135deg, #fff0f0 0%, #ffe6e6 100%) !important;
+  border: none !important;
+  border-radius: 15px !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+.order-summary-item {
+  background: transparent !important;
+  padding: 15px 20px !important;
+  border-bottom: 1px solid #ffd1d1 !important;
+  font-size: 1.1rem;
+}
+
+.order-summary-item:last-child {
+  border-bottom: none !important;
+}
+
+.order-summary-item i {
+  margin-right: 10px;
+  color: #e74c3c;
+  width: 20px;
+}
+
+.stock-badge {
+  font-size: 0.9rem !important;
+  padding: 8px 12px !important;
+  border-radius: 20px !important;
+}
+
+.stock-badge i {
+  margin-right: 5px;
+}
+
+
+.add-to-cart-btn {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%) !important;
+  border: none !important;
+  padding: 15px 20px !important;
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+  transition: all 0.3s ease !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.add-to-cart-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4) !important;
+  background: linear-gradient(135deg, #ff6b6b 0%, #e74c3c 100%) !important;
+}
+
+.add-to-cart-btn:active {
+  transform: translateY(0);
+}
+
+
+.reviews-title {
+  color: #8b4513;
+  margin: 40px 0 20px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.reviews-title i {
+  margin-right: 10px;
+  color: #e74c3c;
+}
+
+.no-reviews-msg {
+  text-align: center;
+  color: #7f8c8d;
+  font-style: italic;
+  padding: 30px !important;
+  background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 100%) !important;
+  border-radius: 15px !important;
+}
+
+.no-reviews-msg i {
+  margin-right: 10px;
+  color: #e74c3c;
+}
+
+.reviews-list {
+  margin: 20px 0;
+}
+
+.review-item {
+  background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 100%) !important;
+  border: none !important;
+  border-radius: 15px !important;
+  margin-bottom: 15px !important;
+  padding: 20px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.review-item:hover {
+  transform: translateY(-2px);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review-header strong {
+  color: #8b4513;
+  font-size: 1.1rem;
+}
+
+.review-date {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.review-comment {
+  color: #5d4037;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+
+.review-form-section {
+  background: linear-gradient(135deg, #fff0f0 0%, #ffe6e6 100%);
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.review-form h2 {
+  color: #8b4513;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.review-form h2 i {
+  margin-right: 10px;
+  color: #e74c3c;
+}
+
+.pastry-form-select {
+  border: 2px solid #ffd1d1 !important;
+  border-radius: 10px !important;
+  padding: 12px !important;
+  font-size: 1.1rem;
+  background: white !important;
+}
+
+.pastry-form-select:focus {
+  border-color: #e74c3c !important;
+  box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.25) !important;
+}
+
+.pastry-textarea {
+  border: 2px solid #ffd1d1 !important;
+  border-radius: 10px !important;
+  padding: 15px !important;
+  font-size: 1.1rem;
+  resize: vertical;
+  min-height: 120px;
+}
+
+.pastry-textarea:focus {
+  border-color: #e74c3c !important;
+  box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.25) !important;
+}
+
+.submit-review-btn {
+  background: linear-gradient(135deg, #27ae60 0%, #229954 100%) !important;
+  border: none !important;
+  padding: 12px 25px !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+  transition: all 0.3s ease !important;
+}
+
+.submit-review-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4) !important;
+  background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%) !important;
+}
+
+.submit-review-btn:disabled {
+  opacity: 0.7;
+}
+
+
+.signin-prompt {
+  text-align: center;
+  padding: 30px !important;
+  background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 100%) !important;
+  border-radius: 15px !important;
+  color: #5d4037 !important;
+  font-size: 1.1rem;
+}
+
+.signin-prompt i {
+  margin-right: 10px;
+  color: #e74c3c;
+}
+
+.signin-link {
+  color: #e74c3c !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.signin-link:hover {
+  color: #c0392b !important;
+  text-decoration: underline !important;
+}
+
+
+@media (max-width: 768px) {
+  .pastry-product-screen {
+    padding: 10px;
+  }
+  
+  .pastry-img-large {
+    height: 300px;
+  }
+  
+  .pastry-product-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .review-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .review-form-section {
+    padding: 20px;
+  }
+}
+
+
+.loading-box, .message-box {
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 100%);
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.rating {
+  color: #f39c12;
+  font-size: 1.2rem;
+}
+
+.rating span:last-child {
+  color: #7f8c8d;
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+  color: #e74c3c;
+}
+
+.form-floating>label {
+  padding: 1rem 0.75rem;
+  color: #7f8c8d;
+} 
+

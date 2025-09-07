@@ -1,0 +1,184 @@
+.place-order-screen {
+  background-color: #fffaf5;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.pastry-shop-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pastry-shop-header h1 {
+  color: #7b3f00;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #e76e50;
+  font-style: italic;
+}
+
+.pastry-card {
+  border-radius: 15px;
+  border: 1px solid #f8e0c7;
+  box-shadow: 0 4px 12px rgba(123, 63, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.pastry-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title-pastry {
+  color: #7b3f00;
+  font-family: 'Playfair Display', serif;
+  border-bottom: 2px dashed #f8c19a;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.card-title-pastry i {
+  margin-right: 10px;
+  color: #e76e50;
+}
+
+.pastry-text {
+  color: #5a3921;
+  line-height: 1.8;
+}
+
+.pastry-edit-link {
+  color: #e76e50;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.pastry-edit-link:hover {
+  color: #7b3f00;
+  text-decoration: underline;
+}
+
+.pastry-items {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pastry-item {
+  background-color: #fff9f0;
+  border: 1px solid #f8e0c7;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.pastry-img {
+  border: 2px solid #f8c19a;
+  padding: 3px;
+  max-height: 80px;
+  object-fit: cover;
+}
+
+.pastry-item-name {
+  color: #7b3f00;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pastry-item-name:hover {
+  color: #e76e50;
+  text-decoration: underline;
+}
+
+.pastry-quantity {
+  background-color: #e76e50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+.pastry-price {
+  color: #7b3f00;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.pastry-summary-card {
+  background: linear-gradient(145deg, #fff9f0, #f8e0c7);
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 6px 15px rgba(123, 63, 0, 0.15);
+}
+
+.summary-title {
+  color: #7b3f00;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  border-bottom: 2px dashed #f8c19a;
+  padding-bottom: 15px;
+}
+
+.summary-list {
+  border-radius: 10px;
+}
+
+.summary-item {
+  background-color: transparent;
+  border-bottom: 1px dashed #f8c19a;
+  padding: 12px 0;
+  color: #5a3921;
+}
+
+.summary-total {
+  background-color: #fffaf5;
+  border-radius: 10px;
+  padding: 15px 0;
+  margin-top: 10px;
+  color: #7b3f00;
+  font-size: 1.2rem;
+}
+
+.place-order-container {
+  background-color: transparent;
+  padding: 20px 0 10px;
+}
+
+.place-order-btn {
+  background: linear-gradient(to right, #e76e50, #7b3f00);
+  border: none;
+  border-radius: 30px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(123, 63, 0, 0.3);
+}
+
+.place-order-btn:hover:not(:disabled) {
+  background: linear-gradient(to right, #7b3f00, #e76e50);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(123, 63, 0, 0.4);
+}
+
+.place-order-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pastry-img {
+    max-height: 60px;
+  }
+  
+  .pastry-item-name {
+    font-size: 0.9rem;
+  }
+  
+  .place-order-btn {
+    font-size: 1rem;
+  }
+}

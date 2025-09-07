@@ -1,0 +1,240 @@
+/* ProductListScreen.css - Styling for Admin Product List */
+
+.product-list-container {
+  padding: 2rem;
+  background: #fff9f5;
+  min-height: 100vh;
+}
+
+.product-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px dashed #f8c8c6;
+}
+
+.product-list-title {
+  color: #7b3f00;
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+.create-product-btn {
+  background: linear-gradient(to right, #e67a73, #d85a67);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(230, 122, 115, 0.3);
+}
+
+.create-product-btn:hover {
+  background: linear-gradient(to right, #d85a67, #e67a73);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(230, 122, 115, 0.4);
+  color: white;
+}
+
+.create-product-btn:active {
+  transform: translateY(0);
+}
+
+/* Table styling */
+.product-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.product-table thead {
+  background: linear-gradient(to right, #f8c8c6, #f1d6d4);
+}
+
+.product-table th {
+  padding: 1.2rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #7b3f00;
+  font-size: 1rem;
+  border-bottom: 2px solid #f1d6d4;
+}
+
+.product-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #f8f0ef;
+  color: #5a3921;
+  vertical-align: middle;
+}
+
+.product-table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.product-table tbody tr:hover {
+  background-color: #fff0ee;
+}
+
+.product-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Action buttons */
+.action-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin-right: 0.5rem;
+}
+
+.edit-btn {
+  background: #f8f0ef;
+  border: 1px solid #f1d6d4;
+  color: #e67a73;
+}
+
+.edit-btn:hover {
+  background: #f1d6d4;
+  color: #d85a67;
+}
+
+.delete-btn {
+  background: #fff0ee;
+  border: 1px solid #f8c8c6;
+  color: #e67a73;
+}
+
+.delete-btn:hover {
+  background: #f8c8c6;
+  color: #d85a67;
+}
+
+/* Pagination */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pagination-btn {
+  padding: 0.5rem 0.8rem;
+  margin: 0 0.3rem;
+  border-radius: 6px;
+  background: #f8f0ef;
+  border: 1px solid #f1d6d4;
+  color: #5a3921;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.pagination-btn:hover {
+  background: #f1d6d4;
+  color: #7b3f00;
+  text-decoration: none;
+}
+
+.pagination-btn-active {
+  background: #e67a73;
+  color: white;
+  border-color: #e67a73;
+}
+
+.pagination-btn-active:hover {
+  background: #d85a67;
+  color: white;
+}
+
+/* Loading and message boxes */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.message-box-container {
+  margin: 2rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .product-table {
+    font-size: 0.9rem;
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-list-container {
+    padding: 1rem;
+  }
+  
+  .product-list-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .product-list-title {
+    font-size: 1.5rem;
+  }
+  
+  .product-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .action-btn {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-table th,
+  .product-table td {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+  
+  .create-product-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .pagination-btn {
+    padding: 0.4rem 0.6rem;
+    margin: 0 0.2rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Font Awesome icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');

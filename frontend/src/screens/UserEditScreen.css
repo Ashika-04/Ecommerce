@@ -1,0 +1,235 @@
+.pastry-user-edit-screen {
+  background-color: #fffaf5;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.pastry-container {
+  max-width: 600px;
+}
+
+.pastry-admin-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(145deg, #fff9f0, #f8e0c7);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(123, 63, 0, 0.1);
+}
+
+.pastry-admin-header h1 {
+  color: #7b3f00;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.admin-subtitle {
+  color: #e76e50;
+  font-style: italic;
+  margin: 0;
+}
+
+.pastry-form-card {
+  border-radius: 15px;
+  border: 1px solid #f8e0c7;
+  box-shadow: 0 6px 15px rgba(123, 63, 0, 0.1);
+  overflow: hidden;
+}
+
+.pastry-user-form {
+  padding: 10px;
+}
+
+.pastry-user-form .form-label {
+  color: #7b3f00;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.pastry-user-form .form-label i {
+  margin-right: 10px;
+  color: #e76e50;
+  width: 20px;
+}
+
+.pastry-form-input {
+  border: 2px solid #f8c19a;
+  border-radius: 10px;
+  padding: 12px 15px;
+  background-color: #fff9f0;
+  transition: all 0.3s ease;
+}
+
+.pastry-form-input:focus {
+  border-color: #e76e50;
+  box-shadow: 0 0 0 0.2rem rgba(231, 110, 80, 0.25);
+  background-color: #fff;
+}
+
+.pastry-form-input::placeholder {
+  color: #a86c42;
+  opacity: 0.7;
+}
+
+.pastry-admin-checkbox {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #fff9f0;
+  border-radius: 10px;
+  border: 1px solid #f8e0c7;
+}
+
+.pastry-admin-checkbox .form-check-input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 2px solid #f8c19a;
+}
+
+.pastry-admin-checkbox .form-check-input:checked {
+  background-color: #e76e50;
+  border-color: #e76e50;
+}
+
+.pastry-admin-checkbox .form-check-input:focus {
+  border-color: #e76e50;
+  box-shadow: 0 0 0 0.2rem rgba(231, 110, 80, 0.25);
+}
+
+.pastry-admin-checkbox label {
+  color: #7b3f00;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pastry-admin-checkbox label i {
+  margin-right: 10px;
+  color: #e76e50;
+}
+
+.pastry-admin-checkbox .form-text {
+  margin-left: 30px;
+  margin-top: 8px;
+  color: #a86c42 !important;
+  font-style: italic;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.update-user-btn {
+  background: linear-gradient(to right, #e76e50, #7b3f00);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(123, 63, 0, 0.3);
+  min-width: 160px;
+}
+
+.update-user-btn:hover:not(:disabled) {
+  background: linear-gradient(to right, #7b3f00, #e76e50);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(123, 63, 0, 0.4);
+}
+
+.update-user-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.cancel-btn {
+  border: 2px solid #7b3f00;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #7b3f00;
+  background: transparent;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.cancel-btn:hover {
+  background-color: #7b3f00;
+  color: white;
+}
+
+/* MessageBox customization */
+.alert {
+  border-radius: 10px;
+  border: none;
+}
+
+.alert-danger {
+  background-color: #ffe0e0;
+  color: #c33;
+  border-left: 4px solid #c33;
+}
+
+/* Loading box customization */
+.loading-box {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pastry-container {
+    padding: 0 15px;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .update-user-btn, .cancel-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .pastry-admin-header {
+    padding: 15px;
+  }
+  
+  .pastry-admin-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .admin-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Custom placeholder styling */
+.pastry-form-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #a86c42;
+  opacity: 0.7;
+}
+.pastry-form-input::-moz-placeholder { /* Firefox 19+ */
+  color: #a86c42;
+  opacity: 0.7;
+}
+.pastry-form-input:-ms-input-placeholder { /* IE 10+ */
+  color: #a86c42;
+  opacity: 0.7;
+}
+.pastry-form-input:-moz-placeholder { /* Firefox 18- */
+  color: #a86c42;
+  opacity: 0.7;
+}

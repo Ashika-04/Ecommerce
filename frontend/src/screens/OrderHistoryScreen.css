@@ -1,0 +1,175 @@
+/* OrderHistoryScreen.css */
+.order-history-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.order-history-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.orders-table thead {
+  background-color: #3498db;
+  color: white;
+}
+
+.orders-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.orders-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eaeaea;
+  color: #333;
+}
+
+.orders-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.orders-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.order-id {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.order-date {
+  white-space: nowrap;
+}
+
+.order-total {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.order-status-paid {
+  color: #27ae60;
+  font-weight: 500;
+}
+
+.order-status-not-paid {
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+.order-status-delivered {
+  color: #27ae60;
+  font-weight: 500;
+}
+
+.order-status-not-delivered {
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+.details-button {
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.details-button:hover {
+  background-color: #2980b9;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #7f8c8d;
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #bdc3c7;
+}
+
+.empty-state-message {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.shop-now-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.shop-now-button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .order-history-container {
+    padding: 1rem;
+  }
+  
+  .orders-table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  .order-id {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 576px) {
+  .order-history-title {
+    font-size: 1.5rem;
+  }
+  
+  .orders-table {
+    font-size: 0.8rem;
+  }
+  
+  .details-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,76 @@
+/* SearchBox.css - Styling for Search Box Component */
+
+.search-form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-input-group {
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #f1d6d4;
+  transition: all 0.3s ease;
+}
+
+.search-input-group:focus-within {
+  border-color: #e67a73;
+  box-shadow: 0 6px 15px rgba(230, 122, 115, 0.2);
+  transform: translateY(-2px);
+}
+
+.search-input {
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  color: #5a3921;
+  background: #fff9f5;
+}
+
+.search-input:focus {
+  outline: none;
+  background: white;
+  box-shadow: none;
+}
+
+.search-input::placeholder {
+  color: #a87c65;
+  opacity: 0.8;
+}
+
+.search-btn {
+  background: linear-gradient(to right, #e67a73, #d85a67);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background: linear-gradient(to right, #d85a67, #e67a73);
+  color: white;
+}
+
+.search-btn:active {
+  transform: scale(0.98);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .search-form {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .search-input {
+    padding: 0.65rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .search-btn {
+    padding: 0.65rem 1rem;
+  }
+}
+
+/* Font Awesome icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');

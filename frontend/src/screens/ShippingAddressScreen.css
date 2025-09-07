@@ -1,0 +1,241 @@
+.pastry-shipping-screen {
+  background-color: #fffaf5;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.pastry-container {
+  max-width: 700px;
+}
+
+.pastry-shipping-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(145deg, #fff9f0, #f8e0c7);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(123, 63, 0, 0.1);
+}
+
+.pastry-shipping-header h1 {
+  color: #7b3f00;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.shipping-subtitle {
+  color: #e76e50;
+  font-style: italic;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.pastry-shipping-card {
+  border-radius: 15px;
+  border: 1px solid #f8e0c7;
+  box-shadow: 0 6px 15px rgba(123, 63, 0, 0.1);
+  overflow: hidden;
+}
+
+.pastry-shipping-form {
+  padding: 10px;
+}
+
+.pastry-shipping-form .form-label {
+  color: #7b3f00;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.pastry-shipping-form .form-label i {
+  margin-right: 10px;
+  color: #e76e50;
+  width: 20px;
+}
+
+.pastry-form-input {
+  border: 2px solid #f8c19a;
+  border-radius: 10px;
+  padding: 12px 15px;
+  background-color: #fff9f0;
+  transition: all 0.3s ease;
+}
+
+.pastry-form-input:focus {
+  border-color: #e76e50;
+  box-shadow: 0 0 0 0.2rem rgba(231, 110, 80, 0.25);
+  background-color: #fff;
+}
+
+.pastry-form-input::placeholder {
+  color: #a86c42;
+  opacity: 0.7;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-row .form-group {
+  flex: 1;
+  min-width: 250px;
+}
+
+.map-section .form-label {
+  margin-bottom: 15px;
+}
+
+.map-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.map-btn {
+  background: linear-gradient(to right, #e76e50, #7b3f00);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-weight: 600;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(123, 63, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+.map-btn:hover {
+  background: linear-gradient(to right, #7b3f00, #e76e50);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(123, 63, 0, 0.4);
+  color: white;
+}
+
+.location-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  background-color: #f0f8f0;
+  border-radius: 10px;
+  border: 1px solid #c1e0c1;
+  color: #2e7d32;
+  font-size: 0.9rem;
+}
+
+.location-info i {
+  color: #2e7d32;
+}
+
+.location-info.no-location {
+  background-color: #fff9f0;
+  border: 1px dashed #f8c19a;
+  color: #a86c42;
+}
+
+.location-info.no-location i {
+  color: #e76e50;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.continue-btn {
+  background: linear-gradient(to right, #e76e50, #7b3f00);
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(123, 63, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.continue-btn:hover {
+  background: linear-gradient(to right, #7b3f00, #e76e50);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(123, 63, 0, 0.4);
+}
+
+/* CheckoutSteps customization for pastry theme */
+.checkout-steps {
+  padding: 20px;
+  background-color: #fff9f0;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  border: 1px solid #f8e0c7;
+}
+
+.checkout-steps > div {
+  color: #a86c42;
+}
+
+.checkout-steps .active {
+  color: #e76e50;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pastry-container {
+    padding: 0 15px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .form-row .form-group {
+    min-width: 100%;
+  }
+  
+  .map-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .pastry-shipping-header {
+    padding: 15px;
+  }
+  
+  .pastry-shipping-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .shipping-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Custom placeholder styling */
+.pastry-form-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #a86c42;
+  opacity: 0.7;
+}
+.pastry-form-input::-moz-placeholder { /* Firefox 19+ */
+  color: #a86c42;
+  opacity: 0.7;
+}
+.pastry-form-input:-ms-input-placeholder { /* IE 10+ */
+  color: #a86c42;
+  opacity: 0.7;
+}
+.pastry-form-input:-moz-placeholder { /* Firefox 18- */
+  color: #a86c42;
+  opacity: 0.7;
+}

@@ -1,0 +1,267 @@
+/* SigninScreen.css */
+.signin-screen {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fffaf5 0%, #ffefe6 100%);
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.signin-container {
+  max-width: 1200px;
+  padding: 0;
+}
+
+.signin-wrapper {
+  display: flex;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  min-height: 600px;
+}
+
+.signin-left {
+  flex: 1;
+  background: linear-gradient(135deg, #ffd6e7 0%, #ffdfd3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.signin-left::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.signin-left::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+}
+
+.signin-decoration {
+  text-align: center;
+  color: #7c4d3e;
+  z-index: 1;
+}
+
+.cake-icon {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.signin-decoration h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.signin-decoration p {
+  font-size: 1.1rem;
+  max-width: 300px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.signin-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.signin-form-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-header h1 {
+  color: #7c4d3e;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.form-header p {
+  color: #9e6a5f;
+  font-size: 1.1rem;
+}
+
+.signin-form {
+  width: 100%;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #7c4d3e;
+  font-weight: 600;
+}
+
+.form-input {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  border: 2px solid #ffdfd3;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #fffaf7;
+}
+
+.form-input:focus {
+  border-color: #e67b7b;
+  box-shadow: 0 0 0 0.2rem rgba(230, 123, 123, 0.25);
+  outline: none;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 42px;
+  font-size: 1.2rem;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #e67b7b 0%, #ff8e7a 100%);
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(230, 123, 123, 0.3);
+}
+
+.signin-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #ff8e7a 0%, #e67b7b 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(230, 123, 123, 0.4);
+}
+
+.signin-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.form-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-links div {
+  margin-bottom: 10px;
+}
+
+.form-link {
+  color: #e67b7b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.form-link:hover {
+  color: #7c4d3e;
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .signin-wrapper {
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .signin-left {
+    padding: 30px;
+    min-height: 200px;
+  }
+  
+  .signin-decoration {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .cake-icon {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+  
+  .signin-decoration h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  
+  .signin-decoration p {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .signin-screen {
+    padding: 10px;
+  }
+  
+  .signin-wrapper {
+    border-radius: 15px;
+  }
+  
+  .signin-left {
+    min-height: 150px;
+    padding: 20px;
+  }
+  
+  .signin-right {
+    padding: 30px 20px;
+  }
+  
+  .form-header {
+    margin-bottom: 30px;
+  }
+  
+  .form-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .cake-icon {
+    font-size: 2.5rem;
+  }
+  
+  .signin-decoration h2 {
+    font-size: 1.3rem;
+  }
+}

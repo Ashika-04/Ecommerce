@@ -1,0 +1,168 @@
+/* PaymentMethodScreen.css - Styling for Payment Method Screen */
+
+.payment-container {
+  padding: 2rem;
+  background: #fff9f5;
+  min-height: 100vh;
+}
+
+.payment-content {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.payment-title {
+  color: #7b3f00;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.payment-form {
+  margin-top: 1.5rem;
+}
+
+.payment-option {
+  margin-bottom: 1.5rem;
+  padding: 1.2rem;
+  border: 2px solid #f1d6d4;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: #fff9f5;
+}
+
+.payment-option:hover {
+  border-color: #e67a73;
+  background: #fff0ee;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(230, 122, 115, 0.1);
+}
+
+.payment-option:has(.form-check-input:checked) {
+  border-color: #e67a73;
+  background: #fff0ee;
+}
+
+.form-check-input {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.8rem;
+  border: 2px solid #f1d6d4;
+}
+
+.form-check-input:checked {
+  background-color: #e67a73;
+  border-color: #e67a73;
+}
+
+.form-check-input:focus {
+  border-color: #e67a73;
+  box-shadow: 0 0 0 0.25rem rgba(230, 122, 115, 0.25);
+}
+
+.form-check-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #5a3921;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.payment-icon {
+  margin-right: 0.8rem;
+  font-size: 1.4rem;
+  color: #e67a73;
+}
+
+.continue-btn {
+  width: 100%;
+  background: linear-gradient(to right, #e67a73, #d85a67);
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(230, 122, 115, 0.3);
+  margin-top: 1rem;
+}
+
+.continue-btn:hover {
+  background: linear-gradient(to right, #d85a67, #e67a73);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(230, 122, 115, 0.4);
+}
+
+.continue-btn:active {
+  transform: translateY(0);
+}
+
+/* Checkout steps customization */
+.checkout-steps {
+  margin-bottom: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .payment-container {
+    padding: 1rem;
+  }
+  
+  .payment-content {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .payment-title {
+    font-size: 1.7rem;
+  }
+  
+  .payment-option {
+    padding: 1rem;
+  }
+  
+  .form-check-label {
+    font-size: 1rem;
+  }
+  
+  .payment-icon {
+    font-size: 1.2rem;
+  }
+  
+  .continue-btn {
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .payment-content {
+    padding: 1.2rem;
+  }
+  
+  .payment-title {
+    font-size: 1.5rem;
+  }
+  
+  .payment-option {
+    padding: 0.8rem;
+  }
+  
+  .form-check-label {
+    font-size: 0.95rem;
+  }
+}
+
+/* Font Awesome icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
